@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_move_form_inherit_issue_date" model="ir.ui.view">
+        <field name="name">account.move.form.inherit.issue.date</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='invoice_date']" position="attributes">
+                <attribute name="invisible">1</attribute> 
+            </xpath>
+            <xpath expr="//field[@name='invoice_date']" position="after">
+                <field name="date_issue_datetime" string="Fecha de Emisión"/> 
+            </xpath>
+        </field>
+    </record>
+</odoo>
