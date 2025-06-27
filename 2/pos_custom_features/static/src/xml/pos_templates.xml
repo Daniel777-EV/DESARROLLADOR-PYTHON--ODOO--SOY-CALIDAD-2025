@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t inherit_id="point_of_sale.ClientListScreen" customize_id="pos_custom_features_client_list_lang_column">
+        <xpath expr="//thead/tr/th[2]" position="after">
+            <th class="oe_sortable" data-sort="lang">Idioma</th>
+        </xpath>
+        <xpath expr="//tbody/tr/td[2]" position="after">
+            <td>
+                <t t-esc="partner.lang || ''"/>
+            </td>
+        </xpath>
+    </t>
+
+</templates>
