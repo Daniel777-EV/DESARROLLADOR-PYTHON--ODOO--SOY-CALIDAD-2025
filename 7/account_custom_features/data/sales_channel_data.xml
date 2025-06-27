@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="sales_channel_equipo_de_ventas" model="res.sales.channel">
+            <field name="name">Equipo de Ventas</field> [cite: 13]
+        </record>
+        <record id="sales_channel_sitio_web" model="res.sales.channel">
+            <field name="name">Sitio web</field> [cite: 13]
+        </record>
+        </data>
+</odoo>
