@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t inherit_id="point_of_sale.PaymentScreen" customize_id="pos_custom_features_boleta_button">
+        <xpath expr="//div[hasclass('payment-buttons')]//button[hasclass('js_invoice')]" position="after">
+            <button class="button js_boleta" t-if="env.pos.config.iface_invoicing" accesskey="B">
+                Boleta
+                <i class="fa fa-file-text-o"/>
+            </button>
+        </xpath>
+    </t>
+
+</templates>
+
+
+</templates>
